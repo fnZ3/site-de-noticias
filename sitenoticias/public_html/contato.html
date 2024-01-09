@@ -1,14 +1,14 @@
 <html>
-    <head>
-        <title>Inicio - Noticias</title>
+     <head>
+        <title>Contato - Noticias</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
         <link href="css/estilomeu.css" rel="stylesheet" type="text/css"/> 
         <script src="js/bootstrap.min.js"></script>
     </head>
+    
     <body class="bg-body-tertiary">
-        
         <nav class="navbar navbar-expand-lg bg-dark ">  
             <div class="container-fluid">
                 <a class="navbar-brand text-white" href="#">MundoEmManchetes</a>
@@ -42,9 +42,6 @@
                         <a class="nav-link active text-white" aria-current="page" href="eventos.html"> Eventos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active text-white" aria-current="page" href="categoria.html"> Categorias</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link active text-white" aria-current="page" href="galeria.html"> Galeria</a>
                     </li>
                     <li class="nav-item">
@@ -58,195 +55,60 @@
             </form>
             </div>
         </div>
-        </nav> <!-- menu -->
-        <br>
-        <br>
+        </nav>
+        
         <br>
         
         <div class="row">
             <div class="col-2"></div>
             <div class="col-8">
-                    <div id="carouselExampleIndicators" class="carousel slide">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="neymar.png" class="d-block w-100 h-75" alt="imagem do neymar segurando uma chuteira">
-                            </div>
-                            <div class="carousel-item">
-                              <img src="theTownMsc.png" class="d-block w-100 h-75" alt="imagens de fogos de artificios na abertura do The Town">
-                            </div>  
-                            <div class="carousel-item">
-                              <img src="camaraDvereadores.png" class="d-block w-100 h-75" alt="alexandre de moraes falando na camara">
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Proximo</span>
-                        </button>
+                <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Nome</label>
+                      <input type="nome" class="form-control" id="nome" placeholder="Nome">
                     </div>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Sobrenome</label>
+                      <input type="sobrenome" class="form-control" id="sobrenome" placeholder="Sobrenome">
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">E-mail</label>
+                      <input type="E-mail" class="form-control" id="email" placeholder="E-mail">
+                      <div id="email" class="form-text">Nao compartilhe seu E-mail</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Senha</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
+                      <div id="password" class="form-text">Nao compartilhe sua Senha </div>
+                       </div>
+                    <div> 
+                        <label for="genero" class="form-label">Qual seu genero?</label>
+                    <br>
+                    <input type="radio" id="generom" name="genero" value="masculino">
+                       <label for="html">Masculino</label>
+                       <br>
+                       <input type="radio" id="generof" name="genero" value="feminino">
+                       <label for="css">Feminino</label>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="genero" class="form-label">Qual o motivo do Contato?</label>
+                        <br>
+                        <textarea name="message" rows="10" cols="30" placeholder="Digite aqui..."></textarea>
+                        <br>
+                    </div>
+                    <br>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Lembre de mim</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary ">Enviar</button>
+                </form>
             </div>
             <div class="col-2"></div>
-        </div> <!-- carrosel -->
+        </div>
         
-        <div class="row"> 
-            <div class="col-1"></div>
-            <div class="col-5 border-1">
-                <div class="card mb-3" style="max-width: 1000px;">
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="chuteira.png" class="img-fluid rounded-start h-100" alt="neymar segurando a chuteira">
-                        </div>
-                      <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">futebol internacional</h5>
-                            <p class="card-text">Neymar ganha chuteira com homenagem por recorde de gols</p>
-                            <p class="card-text"><small class="text-body-secondary">00:00</small></p>
-                        </div>
-                      </div>
-                    </div>
-                </div>
-                <div class="card mb-3" style="max-width: 1000px;">
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="politica.png" class="img-fluid rounded-start h-100" alt="deputado falando sobre prints e audios">
-                        </div>
-                      <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Congresso</h5>
-                            <p class="card-text">Novos prints e áudios mostram ameaças de Janones aos próprios funcionários</p>
-                            <p class="card-text"><small class="text-body-secondary">00:00</small></p>
-                        </div>
-                      </div>
-                    </div>
-                </div>
-                <div class="card mb-3" style="max-width: 1000px;">
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="audiencia.png" class="img-fluid rounded-start h-100" alt="uma audiencia para definir sobre o marco regulatorio do hidrogenio">
-                        </div>
-                      <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Marco regulatório</h5>
-                            <p class="card-text">Comissão especial deverá votar na próxima terça parecer sobre marco regulatório do hidrogênio verde</p>
-                            <p class="card-text"><small class="text-body-secondary">00:00</small></p>
-                        </div>
-                      </div>
-                    </div>
-                </div>
-                <div class="card mb-3" style="max-width: 1000px;">
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="policia federal.png" class="img-fluid rounded-start h-100" alt="Roberto Jefferson sendo levado ao juri algemado">
-                        </div>
-                      <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Policia Federal</h5>
-                            <p class="card-text">Roberto Jefferson vai a júri popular por atirar contra agentes da PF</p>
-                            <p class="card-text"><small class="text-body-secondary">00:00</small></p>
-                        </div>
-                      </div>
-                    </div>
-                </div>
-                <div class="card mb-3" style="max-width: 1000px;">
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="prisao.png" class="img-fluid rounded-start h-100" alt="Foragido dos EUA no brasil sendo preso">
-                        </div>
-                      <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Condenado a prisão perpétua</h5>
-                            <p class="card-text">EUA usaram câmeras térmicas e cães para capturar brasileiro</p>
-                            <p class="card-text"><small class="text-body-secondary">00:00</small></p>
-                        </div>
-                      </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-5 border-1">
-                
-                <div class="card mb-3" style="max-width: 1000px;">
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="theTownMsc.png" class="img-fluid rounded-start h-100" alt="imagens de fogos de artificios na abertura do The Town">
-                        </div>
-                      <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">The Town</h5>
-                            <p class="card-text">02/09/23 inicia o primeiro evendo do the town no brasil</p>
-                            <p class="card-text"><small class="text-body-secondary">00:00</small></p>
-                        </div>
-                      </div>
-                    </div>
-                </div>
-                <div class="card mb-3" style="max-width: 1000px;">
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="theTownArte.png" class="img-fluid rounded-start h-100" alt="fala sobre a ideia da arte na muscia no evento do the Town">
-                        </div>
-                      <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">The Town</h5>
-                            <p class="card-text">Artes visuais mostram efervescência cultural de São Paulo na Cidade da Música</p>
-                            <p class="card-text"><small class="text-body-secondary">00:00</small></p>
-                        </div>
-                      </div>
-                    </div>
-                </div> 
-                <div class="card mb-3" style="max-width: 1000px;">
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="theTownGastronomia.png" class="img-fluid rounded-start h-100" alt=" Chefe de cozinha mostrando a gastronomia do The Town">
-                        </div>
-                      <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">The Town</h5>
-                            <p class="card-text"> No The Town, a experiência vai muito além dos shows e a gastronomia também vai encantar o público!            </p>
-                            <p class="card-text"><small class="text-body-secondary">00:00</small></p>
-                        </div>
-                      </div>
-                    </div>
-                </div>
-                <div class="card mb-3" style="max-width: 1000px;">
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="carnaval.png" class="img-fluid rounded-start h-100" alt="varios bonecos de carnaval prontos para 2024 nas casas de sp">
-                        </div>
-                      <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Carnaval</h5>
-                            <p class="card-text"> Carnaval 2024: venda de ingressos para desfiles de escolas de samba de SP começa nesta segunda            </p>
-                            <p class="card-text"><small class="text-body-secondary">00:00</small></p>
-                        </div>
-                      </div>
-                    </div>
-                </div>
-            </div>
-        </div> <!-- cards -->
-        
-        <br>
-        
-        <div class="row">
-            <div class="col-1"></div>
-            <div class="col-10">
-                <div>
-                    <a href="https://seara.com.br/"> <img src="seara.png" class="d-block w-100" alt=" cochas de galinha com novo sabor da seara"/> </a>
-                </div>
-            </div>
-            <div class="col-1"></div>
-        </div> <!-- anuncio -->
-        
-        <br>
-        <br>
-            
-    <footer class="bg-dark text-white pt-5 pb-4 ">   
+        <footer class="bg-dark text-white pt-5 pb-4 ">   
         <div class="container text-center ">
             <div class="row text-center ">
                 <div class=" col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
@@ -347,8 +209,7 @@
             </div>
         </div>
         
-    </footer> <!-- Footer -->       
-            
+    </footer>
+        
     </body>
-    
 </html>
